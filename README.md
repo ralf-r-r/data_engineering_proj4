@@ -1,8 +1,5 @@
 # Data Lake ETL Pipeline
-This projects implements an ETL pipeline for a data lake hosted on S3. The ETL pipelien loads data from S3, processes 
-the data into analytics tables using PySpark, and loads them back into S3.  The data resides in S3, in a directory of 
-JSON logs on user activity, as well as a directory with JSON metadata on the songs. The project defines fact and 
-dimension tables for a star schema.
+This projects implements an ETL pipeline for a data lake hosted on S3. The ETL pipelien loads data from S3, processes the data into analytics tables using PySpark, and loads them back into S3.  The data resides in S3, in a directory of JSON logs on user activity, as well as a directory with JSON metadata on the songs. The project defines fact and dimension tables for a star schema.
 
 # Porject Structure
 The spark folder contains the code for the ETL pipeline:
