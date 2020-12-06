@@ -67,7 +67,7 @@ start_time, hour, day, week, month, year, weekday
    - As EMR-role use EMR_DefaultRole and add S3 FullAccess permissions to EMR_DefaultRole
 2. Create a new AWS user with programmatic access and S3 Full Access permissions, save credentials in safe place and add the access_key and secret_key in the dl.cfg config file
 
-### Copy the python code on the EMR Cluster:
+### Copy the Python Code on the EMR Cluster:
 ```
 scp -i <your permission file path> -r ./spark hadoop@<your Master DNS>:/home/hadoop/
 ```
@@ -87,7 +87,7 @@ source ~/.bashrc
 ```
 Replace `XXX` with the actual version  found in the path `usr/lib/spark/python/lib` on the EMR cluster
 
-### Run ETL pipeline
+### Run ETL Pipeline
 In the ssh session navigate into the spark folder and run the `etl.py` script:
 ```
 python etl.py
