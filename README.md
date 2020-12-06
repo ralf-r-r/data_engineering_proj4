@@ -67,7 +67,7 @@ start_time, hour, day, week, month, year, weekday
 ### Create a EMR Cluster
 1. Create an AWS EMR Cluster:
    - choose EMR versoin 5.32.0
-   - AS EMR-role use EMR_DefaultRole and add S3 FullAccess permissions to EMR_DefaultRole
+   - As EMR-role use EMR_DefaultRole and add S3 FullAccess permissions to EMR_DefaultRole
 2. Create a new AWS user with programmatic access and S3 Full Access permissions, save credentials in safe place and add the access_key and secret_key in the dl.cfg config file
 
 ### Copy the python code on the EMR Cluster:
@@ -88,7 +88,7 @@ echo 'export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH'
 echo 'export PYSPARK_PYTHON=/usr/bin/python3' >> ~/.bashrc
 source ~/.bashrc
 ```
-Replace `XXX` with the actual version  found in the path `user/lib/spark/python/lib` on the EMR cluster
+Replace `XXX` with the actual version  found in the path `usr/lib/spark/python/lib` on the EMR cluster
 
 ### Run ETL pipeline
 In the ssh session navigate into the spark folder and run the `etl.py` script:
